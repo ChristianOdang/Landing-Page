@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+header {
+  background: #ebe5e5;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 3rem 0;
+}
+h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+.btn {
+  padding: 1rem;
+  display: inline-block;
+  margin: 1rem 0;
+  border: none;
+  border-radius: 12px;
+  color: #000;
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
+  max-width: 1200px;
+}
+section {
+  text-align: center;
+}
+.features {
+  background: #fff;
+  color: #000;
+}
+.feature {
+  width: 20%;
+  display: inline-block;
+  margin: 2rem 1rem;
+}
+.feature p {
+  color: #000;
+  font-size: 16px;
+  font-weight: 900;
+}
+.content {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 20px 0 20px;
+}
+.quote {
+  display: flex;
+  margin: 3rem 0;
+  border: none;
+  height: 350px;
+  padding: 2rem 0;
+  border-radius: 12px;
+  box-shadow: 10px 10px 15px rgba(73, 4, 4, 0.76);
+}
+.quote img {
+  width: 30%;
+  transform: translateX(150%);
+   animation: float 3s linear infinite;
+  
+}
+@keyframes about-img-animation {
+  100% {
+    transform: translate(0);
+  }
+}
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0rem);
+  }
+  50% {
+    transform: translateY(-3.5rem);
+  }
+}
+
+.quote p {
+  font-size: 1rem;
+  font-weight: 900;
+  margin-top: 15%;
+   transform: translateX(-150%);
+  animation: about-img-animation 1s ease-in-out forwards;
+}
+@keyframes about-img-animation {
+  100% {
+    transform: translate(0);
+  }
+}
+
+@media (max-width:480px) {
+  .btn {
+    display: block;
+    font-size: 18px;
+    width: 100%;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  header {
+    padding: 1.5rem;
+  }
+  section {
+    padding: 25px 0 15px 0;
+  }
+  .feature {
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .feature img {
+    width: 45%;
+    min-width: 60px;
+    margin-right: 20px;
+  }
+  .quote img {
+    width: 40vw;
+  }
+  .content {
+    max-width: 100%;
+  }
+}
