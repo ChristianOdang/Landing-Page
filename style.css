@@ -21,6 +21,7 @@ h1 {
   border: none;
   border-radius: 12px;
   color: #000;
+  background: #555;
   font-size: 1.8rem;
   font-weight: 900;
 }
